@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Cryptarithm By Hajuenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <section class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-3 rounded shadow-md w-full max-w-md">
+            <h1 class="text-2xl font-bold mb-6">Cryptarithm Solver</h1>
+            <form id="cryptarithmForm">
+                <div class="mb-4">
+                    <label for="cryptarithm" class="block text-gray-700 font-bold mb-2">Enter Cryptarithm:</label>
+                    <input type="text" id="cryptarithm" name="cryptarithm"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        placeholder="SEND + MORE = MONEY">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="button" onclick="solveCryptarithm()"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Solve</button>
+                    <button type="reset" onclick="resetForm()"
+                        class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Reset</button>
+                </div>
+            </form>
+            <div id="result" class="mt-6 text-gray-700 font-bold"></div>
+        </div>
+    </section>
+    <footer class="bg-gray-200 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl font-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find us on any of these platforms, we always respond.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button onclick="window.open('https://x.com/shusui_songolas', '_blank')"
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-twitter"></i></button>
+                        <button onclick="window.open('https://web.facebook.com/profile.php?id=100009064796323', '_blank')"
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-facebook-square"></i></button>
+                        <button onclick="window.open('https://github.com/hajuenter', '_blank')"
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4 justify-between">
+                    <div class="flex flex-wrap items-top mb-6">
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            href="https://instagram.com/shusui_songolas" class="text-blueGray-500 hover:text-gray-800"
+                            target="_blank"> @shusui_songolas</a>
+                        <span>by</span>
+                        <a href="https://github.com/hajuenter" target="_blank"
+                            class="text-blueGray-500 hover:text-blueGray-800">HAJUENTER Tim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
